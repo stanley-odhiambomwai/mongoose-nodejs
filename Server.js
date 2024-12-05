@@ -17,9 +17,9 @@ const Person = require('./models/Person');
 
 const createPerson = async () => {
     const person = new Person({
-        name: 'John Doe',
-        age: 30,
-        favoriteFoods: ['Pizza', 'Burger'],
+        name: 'Stanley Mwai',
+        age: 25,
+        favoriteFoods: ['Chapati', 'Meat', 'Rice'],
     });
 
     try {
