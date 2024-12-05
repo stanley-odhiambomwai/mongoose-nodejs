@@ -31,3 +31,20 @@ const createPerson = async () => {
 };
 
 createPerson();
+
+const createManyPeople = async () => {
+    const arrayOfPeople = [
+        { name: 'Alice', age: 62, favoriteFoods: ['Chicken'] },
+        { name: 'Stanley', age: 25, favoriteFoods: ['Steak'] },
+        { name: 'Mwai', age: 27, favoriteFoods: ['Chapati'] },
+    ];
+
+    try {
+        const people = await Person.create(arrayOfPeople);
+        console.log(people);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+createManyPeople();
